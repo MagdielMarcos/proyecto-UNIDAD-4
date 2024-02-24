@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studiare: Una Comunidad que Crece Junta</title>
+    <link rel="shortcut icon" type="image/x-icon" href="...">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#...">
+            <img src="..." alt="Studiare" width="30" height="24">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a id="botonIniciarSesion" class="nav-link sesionCerrada" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">Iniciar Sesión</a>
+              </li>
+              <li class="nav-item">
+                <a id="botonRegistrarse" class="nav-link sesionCerrada" href="#" data-bs-toggle="modal" data-bs-target="#modalCrearCuenta">Registrarse</a>
+              </li>
+
+              <li class="nav-item">
+                <a id="botonCerrarSesion" class="nav-link sesionIniciada" href="#">Cerrar Sesión</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <!--Modales Registrarse e Iniciar Sesión-->
+
+      <div class="modal" tabindex="-1" id="modalCrearCuenta">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Registrarse</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+                
+                <form id="formCrearCuenta">
+                    <div class="mb-3">
+                      <label for="correoCrearCuenta" class="form-label">Correo</label>
+                      <input type="email" class="form-control" id="correoCrearCuenta" aria-describedby="emailHelp">
+                      
+                    </div>
+                    <div class="mb-3">
+                      <label for="contraCrearCuenta" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="contraCrearCuenta">
+                    </div>
+                    
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary">Registrarse</button>
+                  </form>
+    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modalIniciarSesion">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Iniciar Sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+                
+                <form id="formIniciarSesion">
+                    <div class="mb-3">
+                      <label for="correoIniciarSesion" class="form-label">Correo</label>
+                      <input type="email" class="form-control" id="correoIniciarSesion" aria-describedby="emailHelp">
+                      
+                    </div>
+                    <div class="mb-3">
+                      <label for="contraIniciarSesion" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="contraIniciarSesion">
+                    </div>
+                    
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-primary">Aceptar</button>
+                  </form>
+    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <!--Presentación Principal-->
+    <div class="presentación principal">
+      <h1>Studiare</h1>
+      <div>
+        <p>Donde la educación es una experiencia compartida, una comunidad que crece junta.</p>
+      </div>
+      <div>
+        <a href="...enlace para registrarte...">
+          <button>Únete a Studiare</button>
+        </a>
+      </div>
+    </div>
+
+    <!--Materias-->
+    <div>
+      <h2>Materias</h2>
+      <div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/vector-premium/ilustracion-doodle-matematicas-estilo-dibujado-mano-color_288411-1179.jpg" class="card-img-top" alt="Matemáticas">
+        <div class="card-body">
+          <h5 class="card-title">Matemáticas</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    <div>
+        <a href="">
+          <span>
+            <img src="" alt="Matemáticas">
+          </span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <span>
+            <img src="" alt="Álgebra">
+          </span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <span>
+            <img src="" alt="Física">
+          </span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <span>
+            <img src="" alt="Química">
+          </span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <span>
+            <img src="" alt="Biología">
+          </span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <span>
+            <img src="" alt="Ciencia">
+          </span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <span>
+            <img src="" alt="Geografía">
+          </span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <span>
+            <img src="" alt="Historia">
+          </span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <span>
+            <img src="" alt="Literatura">
+          </span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <span>
+            <img src="" alt="Filosofía">
+          </span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <span>
+            <img src="" alt="Psicología">
+          </span>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <span>
+            <img src="" alt="Sociología">
+          </span>
+        </a>
+      </div>
+      <a href="">
+        Ver más
+        <span>→</span>
+      </a>
+    </div>
+
+    <!--Comunidades-->
+    <div>
+      <h2>Comunidades</h2>
+      <div>
+        <div>
+          <span>
+            <img src="" alt="Escritores Emergentes">
+            <div>Escritores Emergentes</div>
+          </span>
+          <div>
+            <p>Únete para compartir tus creaciones literarias, recibir retroalimentación constructiva y explorar técnicas de escritura. Este grupo es ideal para aquellos apasionados por la palabra escrita y que buscan mejorar sus habilidades narrativas.</p>
+            <a href="">
+              Participar
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+    
+        <div>
+          <span>
+            <img src="" alt="Matemáticas Colaborativas">
+            <div>Matemáticas Colaborativas</div>
+          </span>
+          <div>
+            <p>Únete a nuestro grupo para colaborar en la resolución de problemas matemáticos. Comparte tus desafíos, ofrece ayuda a otros estudiantes y descubre enfoques creativos para resolver ecuaciones y problemas complejos.</p>
+            <a href="">
+              Participar
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+    
+        <div>
+          <span>
+            <img src="" alt="Resolviendo Desafíos de Física">
+            <div>Resolviendo Desafíos de Física</div>
+          </span>
+          <div>
+            <p>Explora el fascinante mundo de la física en nuestro grupo. Colabora en la resolución de problemas, comparte enfoques efectivos y mejora tu comprensión de los conceptos fundamentales.</p>
+            <a href="">
+              Participar
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-success">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+          <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+        </svg>
+        Crea tu propia comunidad
+      </button>
+    </div>
+
+    <!--Clases Particulares-->
+    <div>
+      <h2>Explora nuevas formas de aprender</h2>
+      <div class="materias">
+        <button onclick="mostrarProfesores('Matemáticas')">Matemáticas</button>
+        <button onclick="mostrarProfesores('Álgebra')">Álgebra</button>
+        <button onclick="mostrarProfesores('Física')">Física</button>
+        <button onclick="mostrarProfesores('Química')">Química</button>
+        <button onclick="mostrarProfesores('Biología')">Biología</button>
+        <button onclick="mostrarProfesores('Ciencia')">Ciencia</button>
+        <button onclick="mostrarProfesores('Geografía')">Geografía</button>
+        <button onclick="mostrarProfesores('Historia')">Historia</button>
+        <button onclick="mostrarProfesores('Literatura')">Literatura</button>
+        <button onclick="mostrarProfesores('Filosofía')">Filosofía</button>
+        <button onclick="mostrarProfesores('Psicología')">Psicología</button>
+        <button onclick="mostrarProfesores('Sociología')">Sociología</button>
+        <button onclick="mostrarProfesores('Más')">Más</button>
+      </div>
+    
+      <div id="profesoresMatemáticas" class="profesores">
+        <ul>
+          <li>Profesor A</li>
+          <li>Profesor B</li>
+          <li>Profesor C</li>
+        </ul>
+      </div>
+    
+      <div id="profesoresÁlgebra" class="profesores">
+        <ul>
+          <li>Profesor X</li>
+          <li>Profesor Y</li>
+          <li>Profesor Z</li>
+        </ul>
+      </div>
+    
+      <div id="profesoresFísica" class="profesores">
+        <ul>
+          <li>Profesor M</li>
+          <li>Profesor N</li>
+          <li>Profesor O</li>
+        </ul>
+      </div>
+
+      <div id="profesoresQuímica" class="profesores">
+        <ul>
+          <li>Profesor M</li>
+          <li>Profesor N</li>
+          <li>Profesor O</li>
+        </ul>
+      </div>
+
+      <div id="profesoresBiología" class="profesores">
+        <ul>
+          <li>Profesor M</li>
+          <li>Profesor N</li>
+          <li>Profesor O</li>
+        </ul>
+      </div>
+
+      <div id="profesoresCiencia" class="profesores">
+        <ul>
+          <li>Profesor M</li>
+          <li>Profesor N</li>
+          <li>Profesor O</li>
+        </ul>
+      </div>
+
+      <div id="profesoresGeografía" class="profesores">
+        <ul>
+          <li>Profesor M</li>
+          <li>Profesor N</li>
+          <li>Profesor O</li>
+        </ul>
+      </div>
+
+      <div id="profesoresHistoria" class="profesores">
+        <ul>
+          <li>Profesor M</li>
+          <li>Profesor N</li>
+          <li>Profesor O</li>
+        </ul>
+      </div>
+
+      <div id="profesoresLiteratura" class="profesores">
+        <ul>
+          <li>Profesor M</li>
+          <li>Profesor N</li>
+          <li>Profesor O</li>
+        </ul>
+      </div>
+
+      <div id="profesoresFilosofía" class="profesores">
+        <ul>
+          <li>Profesor M</li>
+          <li>Profesor N</li>
+          <li>Profesor O</li>
+        </ul>
+      </div>
+
+      <div id="profesoresPsicología" class="profesores">
+        <ul>
+          <li>Profesor M</li>
+          <li>Profesor N</li>
+          <li>Profesor O</li>
+        </ul>
+      </div>
+
+      <div id="profesoresSociología" class="profesores">
+        <ul>
+          <li>Profesor M</li>
+          <li>Profesor N</li>
+          <li>Profesor O</li>
+        </ul>
+      </div>
+    
+    </div>
+
+    <!--Descubre que ofrece Studiare-->
+    <div>
+      <div class="container-fluid">
+        <h2>Descubre lo que ofrece Studiare</h2>
+      
+        <div id="carruselFunciones" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Función Preguntas -->
+            <div class="carousel-item active">
+              <div class="funcion-grande">
+                <h3>Preguntas</h3>
+                <p>Realiza preguntas, obtén respuestas y colabora con otros estudiantes para resolver dudas académicas.</p>
+              </div>
+            </div>
+      
+            <!-- Función Biblioteca -->
+            <div class="carousel-item">
+              <div class="funcion-pequeña">
+                <h3>Biblioteca</h3>
+                <p>Accede a una amplia variedad de recursos educativos, libros y materiales para enriquecer tu aprendizaje.</p>
+              </div>
+            </div>
+      
+            <!-- Función Hashtag -->
+            <div class="carousel-item">
+              <div class="funcion-pequeña">
+                <h3>Hashtag</h3>
+                <p>Explora y participa en conversaciones utilizando hashtags relacionados con tus intereses académicos.</p>
+              </div>
+            </div>
+      
+            <!-- Función Grupos -->
+            <div class="carousel-item">
+              <div class="funcion-pequeña">
+                <h3>Grupos</h3>
+                <p>Únete a comunidades de estudiantes con intereses similares, comparte recursos y colabora en proyectos educativos.</p>
+              </div>
+            </div>
+      
+            <!-- Función Foros -->
+            <div class="carousel-item">
+              <div class="funcion-pequeña">
+                <h3>Foros</h3>
+                <p>Participa en discusiones temáticas, comparte opiniones y aprende de las experiencias de otros estudiantes.</p>
+              </div>
+            </div>
+      
+            <!-- Función Eventos -->
+            <div class="carousel-item">
+              <div class="funcion-pequeña">
+                <h3>Eventos</h3>
+                <p>Descubre eventos educativos, conferencias y actividades relacionadas con tus áreas de estudio.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Navegadores laterales -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselFunciones" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselFunciones" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js" type="module"></script>
+    <script src="script.js"></script>
+</body>
+</html>

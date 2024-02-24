@@ -1,0 +1,26 @@
+/* Estilos del Carrusel con Zoom */
+#carruselFunciones {
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    flex: 0 0 33.3333%; /* Tamaño inicial de cada elemento, ajusta según sea necesario */
+  }
+
+  .funcion {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  }
+
+  .funcion:hover {
+    transform: scale(1.2); /* Escala al hacer hover */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+  }
