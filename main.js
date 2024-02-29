@@ -18,15 +18,15 @@ auth.onAuthStateChanged(async function (user) {
         try {
           
             //mostrarContenido(); 
-            const formTareas = $("#form-tareas");
-            formTareas.submit(function (e) {
+            const formTareasMatematicas = $("#form-tareas-matematicas");
+            formTareasMatematicas.submit(function (e) {
                 e.preventDefault();
-                var titulo = formTareas.find("#titulo-tarea").val();
-                var descripcion = formTareas.find("#descripcion-tarea").val();
+                var titulo = formTareasMatematicas.find("#titulo-tarea").val();
+                var descripcion = formTareasMatematicas.find("#descripcion-tarea").val();
                 //console.log(title, description);
-                guardarTarea(titulo, descripcion, user.email);
+                guardarTarea(titulo, descripcion, user.email, "Matematica");
                 
-                formTareas.trigger('reset');
+                formTareasMatematicas.trigger('reset');
             });
 
 
@@ -36,23 +36,23 @@ auth.onAuthStateChanged(async function (user) {
 
 
         const querySnapshot = await obtenerTareas();
-        const contenedorTareas = $("#contenedor-tareas");
+        const contenedorTareas = $("#contenedor-tareas-math");
 
         actualizarObtenerTareas(function (querySnapshot) {
             let html = '';
             querySnapshot.forEach(function (doc) {
                 const task = doc.data();
-                if (task.email == correo) {
+                if (task.materia == "Matematica") {
                     html += `
           <li class="list-group-item list-group-item-action mt-2">
             <h5>${task.titulo}</h5>
             <p>${task.descripcion}</p>
             <div>
-              <button class="btn btn-primary btn-eliminar" data-id="${doc.id}">
-                Delete
+              <button class="btn btn-danger btn-eliminar bi bi-trash3" data-id="${doc.id}">
+                Eliminar
               </button>
-              <button class="btn btn-secondary btn-edit" data-id="">
-                Edit
+              <button class="btn btn-secondary btn-editar bi bi-pencil" data-id="">
+                Editar
               </button>
             </div>
           </li>
@@ -62,15 +62,17 @@ auth.onAuthStateChanged(async function (user) {
             });
             contenedorTareas.html(html);
 
+           
+
             //ACCION ELIMINAR
 
-const $btnsEliminar = $(".btn-eliminar");
+/*const $btnsEliminar = $(".btn-eliminar");
 
 $btnsEliminar.each(function(){
 $(this).on('click', function(event) {
   eliminarTarea($(this).data('id'));
 });
-});
+});*/
         });
 
 
@@ -80,7 +82,7 @@ $(this).on('click', function(event) {
 
        
         const contenedorTareas = $("#contenedor-tareas");
-        contenedorTareas.html('<h3 class="text-white">Inicia sesión para ver tus publicaciones</h3>');
+        contenedorTareas.html('<h3 class="text-dark">Inicia sesión para ver tus publicaciones</h3>');
           
 
 
@@ -88,5 +90,6 @@ $(this).on('click', function(event) {
         verificarSesion(user);
     }
 });
+
 
 

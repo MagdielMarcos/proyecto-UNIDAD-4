@@ -1,6 +1,7 @@
 //LOGICA PARA CREAR CUENTA
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"
 import {auth} from "./firebase.js";
+import { mostrarMensaje } from "./mostrarMensaje.js";
 
 console.log(auth);
 
@@ -26,7 +27,7 @@ formCrearCuenta.submit(async function(e){
 
         formCrearCuenta.trigger("reset"); //reiniciar el forms
     
-        alert("BIENVENIDX "+credencialesUsuario.user.email);
+        mostrarMensaje("BIENVENIDX "+credencialesUsuario.user.email);
     }
 
     catch(error){

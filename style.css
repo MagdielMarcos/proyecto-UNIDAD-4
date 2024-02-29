@@ -1,26 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+  --pink-original: #EA757E;
+  --blue-original: #46b9b3;
+  --yellow-original: #F3B93E;
+  --red-original: #D9593C;
+  --white-original: #FFFEEC;
+  --black-text: #141414;
+}
+
+*{
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 2s linear;
+  text-transform: capitalize;
+}
+
+*::selection{
+  background-color: var(--pink-original);
+  color: var(--white-original);
+}
+
+::-webkit-scrollbar{
+  height: .5rem;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--blue-original);
+  border-radius: 5rem;
+}
+
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+/*Navbar*/
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--red-original);
+}
+
+.navbar .container-fluid{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .container-fluid .navbar-brand{
+font-size: 16px;
+margin-right: auto;
+}
+
+#navbar-toggler{
+  cursor: pointer;
+  color: var(--yellow-original);
+  font-size: 40px;
+  display: none;
+  order: -1;
+}
+
+.navbar-nav {
+  margin: 0; /* Para eliminar el margen predeterminado de la lista de navegación */
+  text-align: center;
+  margin: auto;
+}
+
+.navbar-nav-enlaces{
+  margin-left: 24px;
+  color: var(--red-original);
+  font-size: 20px;
+}
+
+.btn-iniciar-sesión{
+  display: inline-block;
+  margin-top: 16px;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  color: var(--blue-original);
+  font-size: 20px;
+  padding: 5px 18px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.btn-iniciar-sesión:hover{
+  background-color: var(--blue-original);
+  color: white;
+}
+
+.btn-registrarse{
+  display: inline-block;
+  margin-top: 16px;
+  border-radius: 8px;
+  background-color: var(--blue-original);
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  padding: 5px 18px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.btn-registrarse:hover{
+  background-color:white;
+  color: var(--blue-original);
+}
+
+.btn-cerrar-sesión{
+  display: inline-block;
+  margin-top: 16px;
+  border-radius: 8px;
+  background-color: var(--blue-original);
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  padding: 5px 18px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+/*Home Section*/
+
+.btn-unirme{
+  display: inline-block;
+  margin-top: 6px;
+  border-radius: 80px;
+  background-color: var(--blue-original);
+  cursor: pointer;
+  color: white;
+  font-size: 28px;
+  padding: 16px 48px;
+}
+
+.btn-unirme:hover{
+  background-color: var(--blue-original);
+  color: var(--white-original);
+}
+
+.home{
+  margin-top: 80px;
+  margin-bottom: 55px;
+}
+
+.home .row{
+  display: flex;
+  align-items: center;
+}
+
+.home .row .content{
+  flex: 1 1 640px;
+  text-align: center;
+  padding-left: 70px;
+}
+
+.home .row .image{
+  flex: 1 1 640px;
+  margin-left: 30px;
+}
+
+.home .row .image img{
+  width: 85%;
+}
+
+.home .row .content h3{
+  margin-bottom: 16px;
+  font-size: 145px;
+  color: var(--red-original);
+  line-height: 1;
+}
+
+.letra-s {
+  color: var(--red-original);
+}
+
+.letra-t {
+  color: var(--yellow-original);
+}
+
+.letra-u {
+  color: var(--blue-original);
+}
+
+.letra-d {
+  color: var(--pink-original);
+}
+
+.letra-i {
+  color: var(--red-original); 
+}
+
+.letra-a {
+  color: var(--yellow-original);
+}
+
+.letra-r {
+  color: var(--blue-original);
+}
+
+.letra-e {
+  color: var(--pink-original);
+}
+
+.home .row .content p{
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--black-text);
+}
+
+
+
+
+
+
+/*Counter Section*/
+.count{
+  margin-bottom: 40px;
+}
+
+.count .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2px;
+  align-items: flex-start;
+}
+
+.count .box-container .box{
+  background-color: #D8583C;
+  border-radius: 13px;
+  padding: 13px;
+  margin-inline: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0px;
+}
+
+.count .box-container .box i{
+  font-size: 10px;
+  color: #46B9B4;
+}
+
+.count .box-container .box .content h3{
+  font-size: 32px;
+  color: white;
+  margin: 0 auto;
+}
+
+.count .box-container .box .content p{
+  font-size: 20px;
+  color: #FFFEEC;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+/*Materias Section*/
+.heading{
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 55px;
+  color:var(--red-original);
+}
+
+.courses .slide{
+  height: 520px;
+  background-color: #fff2f4;
+  border-radius: 20px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 64px;
+}
+
+.courses .slide img{
+  height: 300px;
+  width: 300px;
+}
+
+.courses .slide h3{
+  margin: 10px 0;
+  font-size: 30px;
+  color: var(--yellow-original);
+}
+
+.courses .slide p{
+  line-height: 1.5;
+  font-size: 17px;
+  color: var(--black-text);
+  margin: 10px;
+}
+
+.swiper-pagination-bullet{
+  background-color: #de755e;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--red-original);
+}
+
+
+
+
+
+/*Comunidad Section*/
+.comunidad-contenido{
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos dentro del contenedor flex */
+  margin-bottom: 20px;
+}
+
+.grupos-comunidades{
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajusta los valores según sea necesario */
+  transition: box-shadow 0.3s ease; /* Agrega una transición suave */
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 23px;
+}
+
+.grupos-comunidades:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ajusta los valores según sea necesario */
+}
+
+.grupos-comunidades .img-comunidades{
+  margin-right: 10px; /* Ajusta el espacio entre la imagen y el nombre */
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+}
+
+.grupos-comunidades h5{
+  margin-top: 8px;
+  flex: 1;
+  color: #1B1B1B;
+}
+
+.grupos-comunidades p{
+  color: #1B1B1B;
+}
+
+
+
+
+
+
+
+
+
+
 /* Estilos del Carrusel con Zoom */
 #carruselFunciones {
-    overflow: hidden;
-  }
+  overflow: hidden;
+}
 
-  .carousel-inner {
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 33.3333%; /* Tamaño inicial de cada elemento, lo puedo ajustar*/
+}
+
+.funcion {
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.funcion:hover {
+  transform: scale(1.2); /* Escala al hacer hover */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra la hacerhover */
+}
+
+
+
+
+
+
+/*media queries*/
+
+/*Laptop L - 1440px*/
+@media (max-width:1440px){
+  /*NAVBAR*/
+  .navbar {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .container-fluid .navbar-brand{
+    font-size: 12px;
+    margin-right: auto; /* Empuja el logo hacia la izquierda */
+  }
+    
+  .navbar .container-fluid .btn-unirme{
+    margin-left: 32px;
+    color: var(--pink-original);
+    font-size: 32px;
+  }
+    
+  #navbar-toggler{
+    cursor: pointer;
+    color: var(--yellow-original);
+    font-size: 40px;
+    display: none;
+    order: -1;
   }
 
-  .carousel-item {
-    flex: 0 0 33.3333%; /* Tamaño inicial de cada elemento, ajusta según sea necesario */
-  }
-
-  .funcion {
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin: 10px;
+  .navbar-nav {
+    margin: 0; /* Para eliminar el margen predeterminado de la lista de navegación */
     text-align: center;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    margin: auto;
   }
 
-  .funcion:hover {
-    transform: scale(1.2); /* Escala al hacer hover */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+  .navbar-nav-enlaces{
+    margin-left: 24px;
+    color: var(--red-original);
+    font-size: 20px;
   }
+    
+
+}
+
+
+
+
+@media (max-width:450px){
+
+  html{
+    font-size: 70%;
+  }
+}

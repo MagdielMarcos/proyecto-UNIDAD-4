@@ -4,137 +4,295 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studiare: Una Comunidad que Crece Junta</title>
-    <link rel="shortcut icon" type="image/x-icon" href="...">
+    <link rel="icon" type="image/png" href="image/Studiare Logo Transparente Cuadrado1.png">
+    <!--swiper css link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--bootstrap css link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--custom css file link-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link toastify css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css">
+    <!--Link bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#...">
-            <img src="..." alt="Studiare" width="30" height="24">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a id="botonIniciarSesion" class="nav-link sesionCerrada" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">Iniciar Sesión</a>
-              </li>
-              <li class="nav-item">
-                <a id="botonRegistrarse" class="nav-link sesionCerrada" href="#" data-bs-toggle="modal" data-bs-target="#modalCrearCuenta">Registrarse</a>
-              </li>
-
-              <li class="nav-item">
-                <a id="botonCerrarSesion" class="nav-link sesionIniciada" href="#">Cerrar Sesión</a>
-              </li>
-              
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
-
-      <!--Modales Registrarse e Iniciar Sesión-->
-
-      <div class="modal" tabindex="-1" id="modalCrearCuenta">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Registrarse</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              
-                
-                <form id="formCrearCuenta">
-                    <div class="mb-3">
-                      <label for="correoCrearCuenta" class="form-label">Correo</label>
-                      <input type="email" class="form-control" id="correoCrearCuenta" aria-describedby="emailHelp">
-                      
-                    </div>
-                    <div class="mb-3">
-                      <label for="contraCrearCuenta" class="form-label">Contraseña</label>
-                      <input type="password" class="form-control" id="contraCrearCuenta">
-                    </div>
-                    
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="submit" class="btn btn-primary">Registrarse</button>
-                  </form>
-    
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="modal" tabindex="-1" id="modalIniciarSesion">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Iniciar Sesión</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              
-                
-                <form id="formIniciarSesion">
-                    <div class="mb-3">
-                      <label for="correoIniciarSesion" class="form-label">Correo</label>
-                      <input type="email" class="form-control" id="correoIniciarSesion" aria-describedby="emailHelp">
-                      
-                    </div>
-                    <div class="mb-3">
-                      <label for="contraIniciarSesion" class="form-label">Contraseña</label>
-                      <input type="password" class="form-control" id="contraIniciarSesion">
-                    </div>
-                    
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-              <button type="submit" class="btn btn-primary">Aceptar</button>
-                  </form>
-    
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    <!--Presentación Principal-->
-    <div class="presentación principal">
-      <h1>Studiare</h1>
-      <div>
-        <p>Donde la educación es una experiencia compartida, una comunidad que crece junta.</p>
-      </div>
-      <div>
-        <a href="...enlace para registrarte...">
-          <button>Únete a Studiare</button>
-        </a>
+  <!--Navbar Star-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#Inicio">
+        <img src="image/Studiare_Horizontal_2_sin_Relleno-removebg-preview.png" alt="Studiare" width="150" height="26">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <a href="#Inicio" class="navbar-nav-enlaces">Inicio</a>
+          <a href="#Materias" class="navbar-nav-enlaces">Materias</a>
+          <a href="#Comunidades" class="navbar-nav-enlaces">Comunidades</a>
+          <a href="#Profesores" class="navbar-nav-enlaces">Profesores</a>
+          <a href="#Sobre nosotros" class="navbar-nav-enlaces">Sobre Nosotros</a>
+        </ul>
+      <a id="botonIniciarSesion" class="nav-link sesionCerrada btn btn-outline-info btn-iniciar-sesión" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">Iniciar Sesión</a>
+      <a id="botonRegistrarse" class="nav-link sesionCerrada btn-registrarse" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#modalCrearCuenta">Registrarse</a>
+      <a id="botonCerrarSesion" class="nav-link sesionIniciada btn-cerrar-sesión bi bi-box-arrow-right" aria-current="page" href="#"> Cerrar Sesión</a>
       </div>
     </div>
+  </nav>
+  <!--Navbar End-->
 
-    <!--Materias-->
-    <div>
-      <h2>Materias</h2>
-      <div class="card" style="width: 18rem;">
-        <img src="https://img.freepik.com/vector-premium/ilustracion-doodle-matematicas-estilo-dibujado-mano-color_288411-1179.jpg" class="card-img-top" alt="Matemáticas">
-        <div class="card-body">
-          <h5 class="card-title">Matemáticas</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+<!--Modales Registrarse/Iniciar sesión-->
+
+<div class="modal" tabindex="-1" id="modalCrearCuenta">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Registrarse</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+          
+          <form id="formCrearCuenta">
+              <div class="mb-3">
+                <label for="correoCrearCuenta" class="form-label bi bi-envelope"> Correo</label>
+                <input type="email" class="form-control" id="correoCrearCuenta" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label for="contraCrearCuenta" class="form-label bi bi-shield-lock"> Contraseña</label>
+                <input type="password" class="form-control" id="contraCrearCuenta">
+              </div>
+
+              <!--<div class="mb-3">
+                <label for="nombresCrearCuenta" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="nombresCrearCuenta">
+              </div>
+
+              <div class="mb-3">
+                <label for="apellidosCrearCuenta" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidosCrearCuenta">
+              </div>
+
+              <div class="mb-3">
+                <label for="edadCrearCuenta" class="form-label">Edad</label>
+                <input type="number" class="form-control" id="edadCrearCuenta">
+              </div>-->
+              
+              <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-outline-warning">Registrarse</button>
+            </form>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="modal" tabindex="-1" id="modalIniciarSesion">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Iniciar Sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+          
+          <form id="formIniciarSesion">
+              <div class="mb-3">
+                <label for="correoIniciarSesion" class="form-label bi bi-envelope"> Correo</label>
+                <input type="email" class="form-control" id="correoIniciarSesion" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label for="contraIniciarSesion" class="form-label bi bi-shield-lock"> Contraseña</label>
+                <input type="password" class="form-control" id="contraIniciarSesion">
+              </div>
+              
+              <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Cancelar</button>
+        <button type="submit" class="btn btn-outline-warning">Aceptar</button>
+            </form>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+  <!--Home Section Star-->
+  <section class="home" id="home">
+    <div class="row">
+      <div class="content">
+        <h3><span class="letra-s">S</span><span class="letra-t">t</span><span class="letra-u">u</span><span class="letra-d">d</span><span class="letra-i">i</span><span class="letra-a">a</span><span class="letra-r">r</span><span class="letra-e">e</span>
+        </h3>
+        <p>Donde la educación es una experiencia compartida, una comunidad que crece junta.</p>
+        <a href="#Registrarse" class="btn-unirme">Unirme</a>
+      </div>
+      <div class="image">
+        <img src="image/chat-web.png" alt="chat-web">
+      </div>
+    </div>
+  </section>
+  <!--Home Section End-->
+
+
+
+  <!--Counter Section Star-->
+  <section class="count">
+
+    <div class="box-container">
+
+      <div class="box">
+        <i class="fas fa-students"></i>
+        <div class="content">
+          <h3>+10.000</h3>
+          <p>estudiantes</p>
         </div>
       </div>
+
+      <div class="box">
+        <i class="fas fa-comunity"></i>
+        <div class="content">
+          <h3>+100</h3>
+          <p>comunidades</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-teacher"></i>
+        <div class="content">
+          <h3>+1000</h3>
+          <p>profesores</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-course"></i>
+        <div class="content">
+          <h3>+50</h3>
+          <p>materias</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-resource"></i>
+        <div class="content">
+          <h3>+500.000</h3>
+          <p>recursos</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!--Counter Section End-->
+
+
+  <!--Courses Section Star-->
+  <section class="courses" id="courses">
+
+    <h1 class="heading">Materias</h1>
+    <div class="swiper course-slider">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+          <img src="courses/matemática.png" alt="matemática">
+          <h3>Matemática</h3>
+          <p>
+            Explora el mundo de los números y las estructuras matemáticas, desafía tu mente con problemas intrigantes y descubre cómo las matemáticas están presentes en la vida cotidiana.
+          </p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalMath">Ver más</a>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="courses/física.png" alt="física">
+          <h3>Física</h3>
+          <p>
+            Sumérgete en la ciencia que explora el comportamiento fundamental del universo. Desde las leyes del movimiento hasta la energía, descubre los secretos del mundo que te rodea.
+          </p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFis">Ver más</a>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="courses/química.png" alt="química">
+          <h3>Química</h3>
+          <p>
+            Descubre la magia de las sustancias y las reacciones químicas. Explora la composición de la materia y cómo interactúan diferentes elementos.
+          </p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalQuim">Ver más</a>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="courses/geografía.png" alt="geografía">
+          <h3>Geografía</h3>
+          <p>
+            Viaja por el mundo y explora la diversidad de la Tierra. Descubre paisajes asombrosos, culturas fascinantes y la interconexión global.
+          </p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalGeo">Ver más</a>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="courses/historia.png" alt="historia">
+          <h3>Historia</h3>
+          <p>
+            Adéntrate en el pasado y descubre cómo eventos y decisiones han moldeado nuestro presente. Explora civilizaciones, sociedades y momentos clave de la humanidad.
+          </p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalHist">Ver más</a>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="courses/literatura.png" alt="literatura">
+          <h3>Literatura</h3>
+          <p>
+            Embárcate en viajes literarios, descubre mundos imaginarios y emociones profundas. Explora la expresión creativa a través de las palabras.
+          </p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLit">Ver más</a>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="courses/psicología.png" alt="psicología">
+          <h3>Psicología</h3>
+          <p>
+            Explora la mente humana, comprende comportamientos y emociones. Descubre los misterios de la psicología y cómo impacta nuestra vida diaria.
+          </p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalPsico">Ver más</a>
+        </div>
+
+        <div class="swiper-slide slide">
+          <img src="courses/arte.png" alt="arte">
+          <h3>Arte</h3>
+          <p>
+            Sumérgete en la expresión creativa a través de diferentes formas artísticas. Descubre la belleza y la diversidad del arte visual y auditivo.
+          </p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalArte">Ver más</a>
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </section>
+  <!--Courses Section End-->
+
+
+    <!--Materias-->
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
     <div>
+      <h2>Materias</h2>
+      <div>
         <a href="">
           <span>
             <img src="" alt="Matemáticas">
-          </span>
-        </a>
-      </div>
-      <div>
-        <a href="">
-          <span>
-            <img src="" alt="Álgebra">
           </span>
         </a>
       </div>
@@ -214,60 +372,213 @@
       </a>
     </div>
 
+    <!-- Modal Matemáticas -->
+<div class="modal fade mimodal"  id="exampleModalMath" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Matemáticas</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <p>
+         
+ Te explicamos qué es matemáticas y en qué campos puede aplicarse esta ciencia. Además, cuáles son sus ramas de estudio.
+
+ ¿Qué es Matemáticas?
+ La etimología de la palabra matemática remite al griego mathema, que puede traducirse como «estudio de un tema». Se define como la ciencia formal y exacta que, basada en los principios de la lógica, estudia las propiedades y las relaciones que se establecen entre los entes abstractos. Este concepto de ‘entes abstractos’ incluye a los números, los símbolos y las figuras geométricas, entre otros.
+
+
+ El campo de estudio de la matemática fue modificándose con el tiempo: hasta el siglo XIX se limitaba al estudio de las cantidades y de los espacios, pero con los avances científicos fueron apareciendo campos de la matemática que excedían esos dos, lo que exigió su redefinición.
+
+La matemática tiene mucha relación con otras ciencias. En primer lugar, se apoya principalmente en la lógica y en sus estrategias para la demostración y la inferencia. Es por esto que la matemática es una ciencia objetiva: solo podrá ser modificada al demostrarse la existencia de errores matemáticos, para lo cual seguramente deberá modificarse gran parte del paradigma científico con el que se trabaja.
+
+El método entonces radica en analizar esos entes abstractos para producir hipótesis y conjeturas, realizar deducciones, y acercarse así al conocimiento matemático, que como se ha dicho, se asume exacto y verdadero. Esas deducciones se llevan a cabo con el apoyo de definiciones (limitaciones de algo respecto de todo lo demás) y axiomas (premisas aceptadas sin la necesidad de una demostración).
+
+Ver además: Ciencias Exactas
+
+¿En qué campos se aplican las matemáticas?
+Economía
+Las matemáticas son esenciales en campos como la economía.
+La aplicación de las matemáticas aparece en casi todos los ámbitos de la vida. Veamos una pequeña reseña:
+
+En la vida cotidiana. Donde con gran asiduidad se hacen cálculos matemáticos, o bien mediciones y comparaciones. Tan omnipresente es la matemática en nuestra vida que muchos expertos consideran a la ausencia de nociones matemáticas como una variante del analfabetismo.
+En las ciencias exactas y naturales. En muchos casos (como la ingeniería o la física), su existencia misma se debe de al enfoque que aportan las matemáticas. En la biología o la química también es sumamente importante la matemática.
+En las ciencias sociales. Como la economía o la psicología, que se apoyan en conceptos matemáticos.
+Incluso en otras disciplinas y en las artes (música, escultura, dibujo). Se han utilizado y se utilizan recursos matemáticos.
+¿Cuáles son las ramas de las matemáticas?
+Geometría - matemáticas 
+La geometría estudia las figuras y sus vínculos con el espacio.
+La matemática se subdivide en diferentes ramas, que fueron apareciendo con el tiempo y se dedican a partes específicas de esta ciencia. Estas son algunas de ellas:
+
+Aritmética. Comprende el estudio de los números. Además de los números naturales, incluye a todos los números racionales, reales y complejos. Las operaciones que se realizan con estos números están incluidas en esta rama.
+Geometría. Comprende el estudio de las figuras y sus vínculos con el espacio. Incluye a la trigonometría y a la geometría descriptiva, entre otras.
+Probabilidad y estadística. Comprende el análisis de las tendencias sobre la base de un muestreo;  resulta de mucho interés para las ciencias sociales.
+Álgebra. Es la rama que se dedica a analizar las estructuras, realizando las operaciones aritméticas a través de letras o símbolos.
+La persona que se dedica al estudio de las matemáticas es llamada matemático/a. Se pueden mencionar como destacados matemáticos a lo largo de la historia a Pitágoras, Arquímedes, René Descartes o Isaac Newton, quienes aportaron importantes conceptos a la materia.
+
+Por último, se dice que un suceso es matemático o que ocurre matemáticamente cuando se presenta con mucha exactitud o regularidad, destacándose precisamente por ese atributo.</p>
+
+<!-- CRUD -->
+<!-- ADD TASK -->
+<div class="container p-4" style="max-height: 600px;">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="h4">Agregar tarea o nota</h1>
+          <form id="form-tareas-matematicas">
+            <label for="title">Titulo:</label>
+            <input
+              type="text"
+              id="titulo-tarea"
+              class="form-control mb-3"
+              class="My First Title"
+              placeholder="Titulo de tarea"
+              autofocus>
+            <label for="description">Descripción:</label>
+            <textarea
+              id="descripcion-tarea"
+              rows="3"
+              class="form-control mb-3"
+              placeholder="Escribir tarea o nota aquí"
+            ></textarea>
+
+            <button type="submit" class="btn btn-primary bi bi-arrow-bar-up" id="btn-task-form"> Guardar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="text-black">Publicaciones</h2>
+      <ul class="list-group" id="contenedor-tareas-mias-math">
+      </ul>
+    </div>
+
+    <div class="col-md-6 ">
+      <h2 class="text-black">Otros usuarios</h2>
+      <ul class="list-group" id="contenedor-tareas-todas-math">
+      </ul>
+    </div>
+  </div>
+</div>  
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Física -->
+<div class="modal fade mimodal"  id="exampleModalFis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Física</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <p>
+         
+          La física es la ciencia natural que estudia la naturaleza de los componentes y fenómenos más fundamentales del Universo como lo son la energía, la materia, la fuerza, el movimiento, el espacio-tiempo, las magnitudes físicas, las propiedades físicas y las interacciones fundamentales.</p>
+
+<!-- CRUD -->
+<!-- ADD TASK -->
+<div class="container p-4" style="max-height: 600px;">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="h4">Agregar tarea o nota</h1>
+          <form id="form-tareas-fisica">
+            <label for="title">Titulo:</label>
+            <input
+              type="text"
+              id="titulo-tarea"
+              class="form-control mb-3"
+              class="My First Title"
+              placeholder="Titulo de tarea"
+              autofocus>
+            <label for="description">Descripción:</label>
+            <textarea
+              id="descripcion-tarea"
+              rows="3"
+              class="form-control mb-3"
+              placeholder="Escribir tarea o nota aquí"
+            ></textarea>
+
+            <button type="submit" class="btn btn-primary bi bi-arrow-bar-up" id="btn-task-form"> Guardar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="text-black">Publicaciones</h2>
+      <ul class="list-group" id="contenedor-tareas-fisica">
+      </ul>
+    </div>
+  </div>
+</div>  
+
+      </div>
+    </div>
+  </div>
+</div>
     <!--Comunidades-->
-    <div>
-      <h2>Comunidades</h2>
-      <div>
-        <div>
+    <section class="comunidad">
+
+      <h2 class="heading">Comunidades</h2>
+  
+      <div class="comunidad-contenido">
+  
+        <div class="grupos-comunidades">
           <span>
-            <img src="" alt="Escritores Emergentes">
-            <div>Escritores Emergentes</div>
+            <img src="image/1-img-comunidades.jpg" alt="Escritores Emergentes" class="img-comunidades">
+            <h5>Escritores Emergentes</h5>
           </span>
           <div>
             <p>Únete para compartir tus creaciones literarias, recibir retroalimentación constructiva y explorar técnicas de escritura. Este grupo es ideal para aquellos apasionados por la palabra escrita y que buscan mejorar sus habilidades narrativas.</p>
-            <a href="">
-              Participar
-              <span>→</span>
-            </a>
+            <a href="">Participar <span>→</span></a>
           </div>
         </div>
     
-        <div>
+        <div class="grupos-comunidades">
           <span>
-            <img src="" alt="Matemáticas Colaborativas">
-            <div>Matemáticas Colaborativas</div>
+            <img src="image/2-img-comunidades.jpg" alt="Matemáticas Colaborativas" class="img-comunidades">
+            <h5>Matemáticas Colaborativas</h5>
           </span>
           <div>
             <p>Únete a nuestro grupo para colaborar en la resolución de problemas matemáticos. Comparte tus desafíos, ofrece ayuda a otros estudiantes y descubre enfoques creativos para resolver ecuaciones y problemas complejos.</p>
-            <a href="">
-              Participar
-              <span>→</span>
-            </a>
+            <a href="">Participar <span>→</span></a>
           </div>
         </div>
     
-        <div>
+        <div class="grupos-comunidades">
           <span>
-            <img src="" alt="Resolviendo Desafíos de Física">
-            <div>Resolviendo Desafíos de Física</div>
+            <img src="image/3-img-comunidades.jpg" alt="Resolviendo Desafíos de Física" class="img-comunidades">
+            <h5>Resolviendo Desafíos de Física</h5>
           </span>
           <div>
             <p>Explora el fascinante mundo de la física en nuestro grupo. Colabora en la resolución de problemas, comparte enfoques efectivos y mejora tu comprensión de los conceptos fundamentales.</p>
-            <a href="">
-              Participar
-              <span>→</span>
-            </a>
+            <a href="">Participar <span>→</span></a>
           </div>
         </div>
+  
       </div>
-      <button type="button" class="btn btn-success">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-          <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-        </svg>
-        Crea tu propia comunidad
-      </button>
-    </div>
-
+<div class="text-center">
+      <button type="button" class="btn btn-success bi bi-calendar-plus"> Crea tu propia comunidad</button>
+</div>
     <!--Clases Particulares-->
     <div>
       <h2>Explora nuevas formas de aprender</h2>
@@ -456,11 +767,17 @@
 
 
 
-    <!--Scripts-->
+    <!--jquery js link-->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
+    <!--bootstrap js link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="main.js" type="module"></script>
+    <!--Link toastify js-->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
+    <!--swiper js link-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--custom js file link-->
     <script src="script.js"></script>
+    <!--main js link-->
+    <script src="main.js" type="module"></script>
 </body>
 </html>
